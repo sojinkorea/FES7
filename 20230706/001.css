@@ -1,0 +1,29 @@
+/* import 구글 폰트 적용 */
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+/* font-face 눈누 폰트 적용 */
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family:a아쿠아리움;
+    color: red;
+}
+    h1 {
+    color: inherit;
+    font-family: 'a아쿠아리움', sans-serif;
+  }
+  strong {
+    border-bottom: 5px solid currentColor;
+  }
+  
+  h2 {
+    color: #999;
+    font-family: 'Pretendard-Regular', Verdana, sans-serif;
+  }
+.font-pc {
+    font-family:'omyu_pretty', 'sans-serif';
+}
