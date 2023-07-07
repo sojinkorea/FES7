@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 우선순위</title>
+    <style>
+        /* 후자우선의 원칙 */
+        /* 구체성의 원칙 */
+        #id1 {
+            color: red;
+        }
+
+        .c1 {
+            color: salmon;
+            background-color: linen;
+        }
+
+        /* 중요성의 원칙 */
+        p {
+            color: blue !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="c1" id="id1" style="color:green">선택자 우선순위</p>
+    <p class="c1" id="id1">선택자 우선순위</p>
+
+</body>
+</html>
