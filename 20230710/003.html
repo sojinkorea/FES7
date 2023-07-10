@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body {
+            height: 100em;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(65, 105, 225, 0.8);
+            color: white;
+        }
+
+        .relative {
+            position: relative;
+            top: 20px;
+            /* top: 200px; */
+            /* left: 200px; */
+        }
+
+        .absolute {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 10px;
+            left: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        box
+    </div>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam maiores quo enim, fugiat, neque ullam corporis unde, minima similique asperiores numquam quae! Rem delectus molestiae dignissimos non repellat molestias odit.
+
+    <div class="box relative">
+        box relative
+    </div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quas eveniet exercitationem eum saepe adipisci ex, modi illum excepturi at vel nostrum? Necessitatibus commodi consequuntur excepturi autem impedit, praesentium aspernatur.
+
+    <div class="box absolute">
+        box absolute
+    </div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quas eveniet exercitationem eum saepe adipisci ex, modi illum excepturi at vel nostrum? Necessitatibus commodi consequuntur excepturi autem impedit, praesentium aspernatur.
+
+    <div class="box fixed">
+        box fixed
+    </div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quas eveniet exercitationem eum saepe adipisci ex, modi illum excepturi at vel nostrum? Necessitatibus commodi consequuntur excepturi autem impedit, praesentium aspernatur.
+
+    <div class="box sticky">
+        box sticky
+    </div>
+</body>
+</html>
