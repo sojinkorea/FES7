@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면의 정중앙에 배치하기</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .modal {
+            width: 200px;
+            height: 100px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #fff;
+
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            /* 정중앙에 오도록 하려면*/
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ea sunt eveniet veniam ipsum numquam laborum, odio cumque eos optio aliquam hic labore excepturi beatae. Magni, consequuntur. Modi, repellendus expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quis temporibus ipsam maiores laboriosam, laborum dolore dolorum recusandae suscipit nemo cumque blanditiis tempore, expedita error quae eos molestias reprehenderit voluptatum.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatem quas asperiores molestias quod vitae unde laborum laudantium error sequi! Laboriosam quidem placeat aperiam nihil assumenda neque rerum, eos nulla!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ea sunt eveniet veniam ipsum numquam laborum, odio cumque eos optio aliquam hic labore excepturi beatae. Magni, consequuntur. Modi, repellendus expedita.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatem quas asperiores molestias quod vitae unde laborum laudantium error sequi! Laboriosam quidem placeat aperiam nihil assumenda neque rerum, eos nulla!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ea sunt eveniet veniam ipsum numquam laborum, odio cumque eos optio aliquam hic labore excepturi beatae. Magni, consequuntur. Modi, repellendus expedita.</p>
+</body>
+
+<div class="modal">
+    <p>삭제하시겠습니까?</p>
+    <button type="button">취소</button>
+    <button type="button">삭제</button>
+</div>
+</html>
