@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        /* 그리드 컨테이너: 그리드의 가장 바깥 영역
+           그리드 셀: 그리드의 한 칸(개념적인 정의) */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr 2fr 3fr);
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: 1fr 2fr 3fr; */
+            /* grid-template-columns: 1fr 500px 3fr; */
+            /* grid-template-columns: 200px 200px 150px; */
+            /* grid-template-rows: 200px 150px; */
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: minmax(50px, 150px) minmax(50px, 100px);
+            gap: 20px 10px;
+
+        }
+        /* 그리드 아이템: 그리드 컨테이너의 자식 요소들 */
+        .item {
+            background-color: skyblue;
+            /* width: 100px; */
+            /* height: 100px; */
+        }
+
+        .item:nth-child(odd) {
+            background-color: seagreen;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore consequuntur commodi enim deleniti ea provident itaque dignissimos, laboriosam necessitatibus placeat quam quo quidem rem, soluta ab vero velit error adipisci.</div>
+    </div>
+</body>
+</html>
