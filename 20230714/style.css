@@ -6,8 +6,8 @@ p {
     /* 마진은 상속되지 않는다. */
     margin: initial;
     padding: 0;
-    /* 상속되면 inherit, 상속 안 되면 initial로 해줌.
-    margin: unset; */
+    /* margin: unset; 
+    상속되면 inherit, 상속 안 되면 initial로 해줌.*/
 }
 
 li {
