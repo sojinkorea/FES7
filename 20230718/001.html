@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box { 
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            animation: change 2s 1s infinite;
+        }
+
+        @keyframes change {
+            /* from {
+                background-color: royalblue;
+                scale: 0;
+            }
+
+            to {
+                background-color: seagreen;
+                scale: 1;
+            } */
+
+            0% {
+                background-color: royalblue;
+                scale: 0;
+            }
+
+            50% {
+                background-color: seagreen;
+                scale: 0.2;
+            }
+
+            100% {
+                background-color: goldenrod;
+                scale: 1.2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">box</div>
+</body>
+</html>
