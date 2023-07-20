@@ -35,8 +35,8 @@ body {
   min-width: 360px;
   padding: 56px 39px 56px 0;
   border-right: 1px solid #ff4f6e;
-  flex-shrink: 0;
   flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .main .main-diary {
@@ -49,14 +49,14 @@ body {
     margin: 40px auto 0;
   }
   .main .main-form {
-    width: 100%;
+    min-width: 100%;
     border: 0;
     padding: 0;
   }
 }
 
 /* article */
-list .li {
+.list li {
   margin: 70px 0;
 }
 
@@ -65,7 +65,6 @@ list .li {
   border-color: #677880;
   border-width: 4px 1px 1px 1px;
   padding: 60px 48px;
-  margin: 40px;
   position: relative;
 }
 
