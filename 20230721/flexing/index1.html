@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexing</title>
+    <style>
+      .container {
+        box-shadow: inset 0 0 20px red;
+        width: 600px;
+        margin: 100px auto;
+        display: flex;
+      }
+
+      .sidebar {
+        box-shadow: inset 0 0 20px blue;
+        flex-basis: auto;
+        padding: 10px;
+        min-width: auto;
+        /* width: 200px; */
+      }
+
+      .main {
+        box-shadow: inset 0 0 20px yellow;
+        flex-basis: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">Sidebar</div>
+      <div class="main">Main</div>
+    </div>
+  </body>
+</html>
