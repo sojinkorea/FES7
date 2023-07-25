@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexing</title>
+    <style>
+      body {
+        background-color: brown;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+      }
+      .playground {
+        border: 10px solid maroon;
+        width: 1200px;
+        margin: auto auto;
+        border-radius: 20px;
+        background-color: skyblue;
+        display: flex;
+        /* align-items 초기값=stretch */
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+      }
+      .frog {
+        background-color: mediumseagreen;
+        color: lime;
+        font-size: 40px;
+        margin: 10px;
+        border: 6px solid green;
+        border-radius: 10px;
+        flex-basis: 212px;
+      }
+      .frog.first {
+        background-color: orange;
+        /* 아래로 내리기 */
+        margin-top: auto;
+        /* align-self: flex-end; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="playground">
+      <div class="frog first"><img src="images/frog.png" /></div>
+      <div class="frog"><img src="images/frog.png" /></div>
+      <div class="frog"><img src="images/frog.png" /></div>
+    </div>
+  </body>
+</html>
