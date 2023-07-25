@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: top;
+}
+button:enabled {
+  cursor: pointer;
+}
+.txt-hide {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.checkbox {
+  position: relative;
+}
+
+.checkbox::before {
+  content: "";
+  background-color: #2f80ed;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: -5px;
+  margin-right: 8px;
+}
+
+input[type="checkbox"] + label {
+  cursor: pointer;
+}
+
+[class^="icon"]::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url(../images/icon_sprites.png);
+  /* 이미지 압축 (1/2) */
+  background-size: 116px 83px;
+}
+
+/* background-position: 1/2해주기 */
+
+.link-sns-login.icon-facebook {
+  border: 1px solid #2d9cdb;
+}
+
+.link-sns-login.icon-naver {
+  border: 1px solid #00bf18;
+}
+
+.link-sns-login.icon-kakao {
+  border: 1px solid #f2c94c;
+}
+
+.icon-google::before {
+  width: 22px;
+  height: 22px;
+  background-position: -52px -10px;
+  /* background: url("images_login/icon_google.png") no-repeat; */
+}
+
+.icon-naver::before {
+  width: 22px;
+  height: 22px;
+  background-position: -10px -10px;
+  /* background: url("images_login/icon_naver.png") no-repeat; */
+}
+
+.icon-kakao::before {
+  width: 22px;
+  height: 22px;
+  background-position: -10px -52px;
+  /* background: url("images_login/icon_kakao.png") no-repeat; */
+}
+
+.icon-facebook::before {
+  height: 24px;
+  width: 13px;
+  background-position: -93px -10px;
+
+  /* background: url("images_login/icon_facebook.png") center no-repeat; */
+}
