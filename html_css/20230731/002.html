@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video</title>
+    <style>
+      video {
+        /* max-width: 100%; */
+
+        /* 요소의 위치를 뷰포트 기준으로 */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-height: 100%;
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      article {
+        position: relative;
+        /* padding-top, padding-bottom속성의 %값은 부모요소의 너비에 비례합니다. */
+        /* height로 주려면 부모 요소에 높이값을 줘야한다 */
+        /* padding-top: 56.25%; */
+
+        aspect-ratio: 16/9;
+
+        /* height: 56.25vw; */
+      }
+
+      .video-rewind {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <video autoplay controls loop src="./video/이세계아이돌 (ISEGYE IDOL) - 리와인드 (REWIND) Official MV.mp4"></video> -->
+
+    <article>
+      <iframe class="video-rewind" src="https://www.youtube.com/embed/fgSXAKsq-Vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+  </body>
+</html>
