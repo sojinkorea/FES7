@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형</title>
+    <style>
+      img {
+        width: 100%;
+        /* max-width: 100%; */
+      }
+
+      article {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      article {
+        /* background-image: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%; */
+        /* background-position: center center; */
+
+        background: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80") center/cover no-repeat;
+
+        /* contain 써야 하는 경우: 로고, 아이콘..등 잘려야하지 않는 이미지 */
+        background: url("./img/logo_google.jpeg") center/contain no-repeat;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <!-- <img src="./img/deca_pc.jpg" alt="페이커" /> -->
+    </article>
+  </body>
+</html>
