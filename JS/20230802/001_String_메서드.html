@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>String 메서드</title>
+  </head>
+  <body>
+    <script>
+      let s = "CEO 장소진";
+      let ss = "CTO 이상혁";
+      let sss = "CEO 장소진 CTO 이상혁 CTO 최우제";
+
+      // replace
+      console.log(s.replace("CEO", "CFO"));
+      console.log(sss.replace(/C[ET]O/g, "잡부"));
+      console.log(s.replace("CEO", "CFO"));
+
+      // replace 고급 문법 //
+      const string = `hojun, lee
+gildong, hong
+hojung, choi
+junho, lee`;
+
+      let result1 = string.replace(/(\w+), (\w+)/gm, "$1 $2");
+      console.log(result1);
+
+      let result2 = string.replace(/(\w+), (\w+)/gm, "$2 $1");
+      console.log(result2);
+
+      let result3 = string.replace(/(\w+), (\w+)/gm, "제 이름은 $2 제 성은 $1 입니다.");
+      console.log(result3);
+
+      // replaceAll
+      console.log(sss.replaceAll("CT0", "잡부"));
+
+      // includes
+      ss.includes("CTO"); // true
+      ss.includes("CEO"); // false
+
+      // 메서드 채이닝
+      sss.replace("CEO", "CFO").includes("CEO").toString().toUpperCase();
+      sss.replace("CEO", "CFO").includes("CEO").toString().toUpperCase();
+
+      // split
+      s.split(" ");
+
+      // 문제: text1 ~ text4를 split을 사용해서 아래 배열로 만들어주세요.
+      let text1 = "aa bb cc dd";
+      let text2 = "aa-bb-cc-dd";
+      let text3 = "aa,bb,cc,dd";
+      let text4 = "aa,bb-cc-dd"; // 중급자 분들만 하세요.
+      // ['aa', 'bb', 'cc', 'dd']
+      // 해답코드
+      // 1.
+      text1.split(" ");
+      // 2.
+      text2.split("-");
+      // 3.
+      text3.split(",");
+      // 4.
+      text4.replace(",", "-").split("-");
+      text4.split(/[,-]/);
+
+      let text5 = text4.replace(",", "-");
+      text5.split("-");
+
+      // trim
+      let text6 = "    aa bb cc dd    ";
+      text6.trim(); // 'aa bb cc dd'
+      text6.replaceAll(" ", ""); // 'aabbccdd'
+
+      // padStart
+      let text7 = "123";
+      text7.padStart(5, "0"); // '00123'
+      // 카카오 입사문제 일부(padStart, replace만 사용)
+      // 우리의 목표: 00101 -> '  # #'
+      let text8 = "101";
+      text8.padStart(5, "0").replaceAll("0", " ").replaceAll("1", "#");
+
+      // concat
+      text1.concat(text2);
+    </script>
+  </body>
+</html>
