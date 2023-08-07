@@ -51,18 +51,12 @@ let result = 0;
 });
 result;
 
-// 확인 요망
 let result = 0;
 [149, 180, 192, 170].forEach((v) => {
   v > 168 ? result++ : null;
 });
 result;
 
-// 확인요망
-let result = 0;
-[149, 180, 192, 170];
-
-// 확인요망
 let result = 0;
 [149, 180, 192, 170];
 
