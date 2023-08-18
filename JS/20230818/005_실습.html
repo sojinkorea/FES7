@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        background: black;
+      }
+
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        padding: 27px;
+      }
+
+      .yellow {
+        background-color: yellow;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div></div>
+    <ul>
+      <li><button id="yellow" type="button">노랑</button></li>
+      <li><button id="red" type="button">빨강</button></li>
+      <li><button id="blue" type="button">파랑</button></li>
+    </ul>
+    <script>
+      const box = document.querySelector('div');
+
+      function yellowClick() {
+        box.className = 'yellow';
+      }
+      function redClick() {
+        box.className = 'red';
+      }
+      function blueClick() {
+        box.className = 'blue';
+      }
+
+      yellow.addEventListener('click', yellowClick);
+      red.addEventListener('click', redClick);
+      blue.addEventListener('click', blueClick);
+    </script>
+  </body>
+</html>
