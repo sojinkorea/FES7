@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 로그인 상태에 따라서 숨겨야 하는 텍스트가 있는 경우 -->
+    <figure>
+      <img src="" alt="티셔츠 3종세트" />
+      <figcaption>상품 가격 : 29,900원 <span class="hidden">회원일 경우에 해당</span></figcaption>
+    </figure>
+
+    <script>
+      const price = document.querySelector('figcaption');
+      console.log(price.textContent);
+      console.log(price.innerText);
+    </script>
+  </body>
+</html>
