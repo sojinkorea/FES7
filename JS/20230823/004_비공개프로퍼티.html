@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // class를 통해 인스턴스를 만들었을 때 보통 우리는 아무런 제약없이 인스턴스의 프로퍼티에 접근하는 것이 가능합니다.
+      class Robot {
+        constructor(name) {
+          this.name = name;
+        }
+
+        sayYourName() {
+          console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님.`);
+        }
+      }
+
+      const bot = new Robot('smith');
+
+      bot.name; // smith
+
+      // 프로퍼티 값 수정
+      bot.name = 'jay';
+      bot.name; // jay
+
+      //  하지만 중요한 데이터를 조심스럽게 다뤄야 할 경우, 그래서 이런 데이터를 외부에서 함부로 수정할 수 없게 만들고 싶을 때 우리는 비공개 프로퍼티로 데이터를 변경할 수 있습니다.
+      // # 키워드를 이용하면 프로퍼티를 비공개로 전환할 수 있습니다.
+      class Robot {
+        #password;
+
+        constructor(name, pw) {
+          this.name = name;
+          this.#password = pw;
+        }
+
+        sayYourName() {
+          console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님.`);
+        }
+
+        getPassword() {
+          return this.#password;
+        }
+
+        setPassword(pw) {
+          this.#password = pw;
+        }
+      }
+
+      // 이제 #password 의 값에 접근하고 수정하려면 반드시 해당하는 기능을 하는 메서드를 사용해야합니다.
+      // 이때 값을 불러오는 메서드를 getter 메서드, 값을 수정하는 메서드를 setter 메서드로 부릅니다.
+      // get, set 키워드를 이용해 아래처럼 코드를 좀 더 단순화 할 수 있습니다.
+      class Robot {
+        #password;
+
+        constructor(name, pw) {
+          this.name = name;
+          this.#password = pw;
+        }
+
+        sayYourName() {
+          console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님.`);
+        }
+
+        get password() {
+          return this.#password;
+        }
+
+        set password(pw) {
+          this.#password = pw;
+        }
+      }
+
+      const bot = new Robot('재현', 1234);
+    </script>
+  </body>
+</html>
