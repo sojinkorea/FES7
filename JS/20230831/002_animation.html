@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: pink;
+
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <script>
+      const box = document.querySelector(".box");
+      let pos = 0;
+
+      // 방법 1
+      // function movingBox(event) {
+      //   if (event.key === "ArrowRight") {
+      //     pos += 5;
+      //     box.style.transform = `translate(${pos}px)`;
+      //   } else if (event.key === "ArrowLeft") {
+      //     pos -= 5;
+      //     box.style.transform = `translate(${pos}px)`;
+      //   }
+      // }
+
+      // document.addEventListener("keydown", movingBox);
+
+      // 방법 2
+      let keys = "";
+
+      function move(event) {
+        keys = event.key;
+      }
+      function stop() {
+        keys = "";
+      }
+
+      function play() {
+        switch (keys) {
+          case "ArrowRight":
+            pos += 5;
+            box.style.transform = `translate(${pos}px)`;
+            break;
+          case "ArrowLeft":
+            pos -= 5;
+            box.style.transform = `translate(${pos}px)`;
+            break;
+        }
+        requestAnimationFrame(play);
+      }
+
+      document.addEventListener("keydown", move);
+      document.addEventListener("keyup", stop);
+      requestAnimationFrame(play);
+    </script>
+  </body>
+</html>
