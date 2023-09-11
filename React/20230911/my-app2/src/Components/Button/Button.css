@@ -1,0 +1,14 @@
+button {
+  border: 0;
+}
+
+.btn {
+  height: 50px;
+  width: 300px;
+  list-style: none;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: gold;
+}
