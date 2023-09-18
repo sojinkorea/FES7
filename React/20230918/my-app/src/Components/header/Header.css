@@ -1,0 +1,63 @@
+/* header 시작 */
+header {
+  margin-bottom: 95px;
+}
+
+.title {
+  position: relative;
+}
+.title .img-title {
+  position: relative;
+  z-index: 10;
+  max-width: 564px;
+}
+.title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 225px;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background-image: url("../../images/title_bg.png");
+  background-position: center;
+  background-size: contain;
+  aspect-ratio: 1/1;
+}
+
+.img-subtitle {
+  max-width: 486px;
+  margin: 125px auto 85px;
+}
+
+.txt-info {
+  position: relative;
+  max-width: 475px;
+  margin: 0 auto;
+  line-height: 24px;
+  font-size: 18px;
+}
+.txt-info .txt-info-strong {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.txt-info::before,
+.txt-info::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 30px;
+  margin-top: -14px;
+}
+.txt-info::before {
+  left: 0;
+  background-image: url("../../images/txt-left.png");
+}
+.txt-info::after {
+  right: 0;
+  background-image: url("../../images/txt-right.png");
+}
+/* header 끝 */

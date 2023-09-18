@@ -1,0 +1,55 @@
+main {
+  margin-bottom: 130px;
+}
+
+.form,
+.section {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.form .txt-wannabe {
+  margin-bottom: 30px;
+}
+.form .txt-hours {
+  margin-bottom: 120px;
+}
+.form input {
+  font-family: GmarketSansMedium;
+  width: 224px;
+  height: 57px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 7px;
+  border: none;
+  margin: 0 17px;
+}
+
+.form .btn-submit {
+  position: relative;
+}
+.form .btn-submit::after {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 72px;
+  right: -70px;
+  bottom: -20px;
+  background-image: url(../../images/hand.png);
+}
+
+.section .txt-wannabe {
+  margin: 147px 0 127px;
+  line-height: 72px;
+}
+.section .txt-wannabe strong {
+  margin: 0 12px;
+  font-size: 72px;
+  font-family: GmarketSansBold;
+  vertical-align: -14px;
+}
+
+.btn-share {
+  margin-left: 18px;
+  background-color: #fff;
+}
