@@ -1,0 +1,204 @@
+/* reset css */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css */
+body {
+  height: 100vh;
+  background: radial-gradient(293.21% 130.49% at 3.59% 5.28%, #f0f4ff 0%, #a5b6ee 100%) no-repeat;
+}
+
+.logo img {
+  width: 244px;
+  height: 48px;
+  display: flex;
+  margin: 72px auto 60px;
+}
+
+.section {
+  width: 400px;
+  height: 360px;
+  border-radius: 16px;
+
+  background: linear-gradient(144deg, #5572bb 2.13%, #374b7c 102.97%);
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+
+  margin: 0 auto;
+  margin-bottom: 170px;
+}
+
+.title h2 {
+  font-family: Pretendard-Bold;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+.title {
+  padding: 48px 0 75px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.btn-group {
+  margin: 40px 82px;
+}
+.btn-start,
+.btn-reset {
+  font-family: Pretendard-Bold;
+  color: #617199;
+  font-size: 14px;
+  line-height: 28px;
+
+  width: 112px;
+  height: 48px;
+
+  border-radius: 50px;
+  background: #324577;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.05) inset;
+  border: none;
+}
+.btn-start img,
+.btn-reset img {
+  vertical-align: top;
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+}
